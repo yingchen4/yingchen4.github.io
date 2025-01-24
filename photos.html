@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ying Chen</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .photo-item {
+            flex: 0 1 calc(33.333% - 10px); /* Three items per row with space between */
+            text-align: center;
+        }
+        .photo-item img {
+            width: 100%;
+            aspect-ratio: 8 / 5; 
+            object-fit: cover; 
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .photo-item .description {
+            margin: 5px 0 5px;
+            font-size: 1em;
+            color: #555;
+        }
+        .photo-item .date {
+            font-size: 0.9em;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            .photo-item {
+                flex: 0 1 calc(50% - 10px); /* Two items per row on smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .photo-item {
+                flex: 0 1 100%; /* One item per row on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Ying Chen</a></h1>
+        <nav>
+            <a href="blog.HTML">Blog</a> / 
+            <a href="research.html">Research</a> / 
+            <a href="cv.html">CV</a> / 
+            <a href="#photos">Photos</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="photo-gallery">
+            <!-- Photo 1 -->
+
+
+            <div class="photo-item">
+                <img src="photos/cherry-blossom.jpg" alt="Photo 1 description">
+                <div class="description">Sakura</div>
+                <div class="date">March 21, 2024</div>
+            </div>
+
+            <div class="photo-item">
+                <img src="photos/qinghai-lake.jpg" alt="Photo 1 description">
+                <div class="description">Qinghai Lake</div>
+                <div class="date">Jane 13, 2024</div>
+            </div>
+
+
+            <div class="photo-item">
+                <img src="photos/boston-seagull.jpg" alt="Photo 1 description">
+                <div class="description">Big Barefoot Boston Bird </div>
+                <div class="date">December 27, 2024</div>
+            </div>
+
+            <div class="photo-item">
+                <img src="photos/acadia-sea.jpg" alt="Photo 1 description">
+                <div class="description">Acadia sand beach in snow</div>
+                <div class="date">January 11, 2025</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
